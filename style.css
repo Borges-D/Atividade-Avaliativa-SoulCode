@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+}
+
+.card {
+  background: #fff !important;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card header {
+  background: #fff !important;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.campo-entrada {
+  background: #fff;
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.campo-entrada input {
+  background: #fff;
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.campo-entrada input:focus {
+  border-color: #49e8d0;
+}
+
+.campo-entrada button {
+  width: 55px;
+  height: 100%;
+  border: none;
+  color: #080808;
+  margin-left: 5px;
+  font-size: 15px;
+  outline: none;
+  background: #49e8d0 !important;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+
+.campo-entrada button:hover,
+.footer button:hover {
+  background: #49e8d0;
+}
+
+.campo-entrada button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card .lista-tarefa {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.lista-tarefa li.feito {
+  color: green; /* Define a cor verde para o texto quando a tarefa está concluída */
+}
+
+
+.lista-tarefa li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.lista-tarefa li .icon {
+  position: absolute;
+  right: -45px;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lista-tarefa li:hover .icon {
+  right: 0px;
+}
+
+.lista-tarefa li .feito-icon {
+  position: absolute;
+  right: -80px;
+  background: #4caf50;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card .footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  padding: 10px;
+}
+
+.footer button {
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #080808;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: #49e8d0;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.footer button.active {
+  opacity: 1;
+}
+
+footer {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 25px;
+  text-align: center;
+}
